@@ -110,7 +110,46 @@ export const images = {
     "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80",
   consult:
     "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=1000&q=80",
+  therapy:
+    "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80",
+  sensory:
+    "https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=1000&q=80",
 };
+
+export const videos = [
+  {
+    title: "A calm walk-through for new families",
+    text: "Demo video block for explaining intake, programs, funding support, and next steps in a friendly way.",
+    embed: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  },
+];
+
+export const governmentLinks = [
+  {
+    title: "Ontario Autism Program",
+    text: "Official Ontario information for autism services and program pathways.",
+    href: "https://www.ontario.ca/page/ontario-autism-program",
+    icon: ClipboardList,
+  },
+  {
+    title: "Autism Spectrum Disorder in Canada",
+    text: "Government of Canada public health information and national autism context.",
+    href: "https://www.canada.ca/en/public-health/services/diseases/autism-spectrum-disorder-asd.html",
+    icon: Brain,
+  },
+  {
+    title: "Disability Tax Credit",
+    text: "Canada Revenue Agency information families may review with qualified advisors.",
+    href: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit.html",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Special Services at Home",
+    text: "Ontario support program information for children with developmental or physical disabilities.",
+    href: "https://www.ontario.ca/page/special-services-home",
+    icon: HandHeart,
+  },
+];
 
 export const programs = [
   {
@@ -215,7 +254,7 @@ export const services = [
 
 export const impactMetrics = [
   { value: "150+", label: "demo families supported", icon: Users },
-  { value: "6", label: "demo program areas", icon: Layers3 },
+  { value: "8", label: "demo program areas", icon: Layers3 },
   { value: "40+", label: "demo caregiver workshops", icon: CalendarCheck },
   { value: "12", label: "demo community partners", icon: HandHeart },
   { value: "85%", label: "demo families report clearer next steps", icon: CheckCircle2 },
