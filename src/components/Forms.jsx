@@ -26,7 +26,7 @@ const inquiryTypes = [
   "Funding Partnership",
   "Community Partnership",
   "Volunteer Interest",
-  "Website Demo Inquiry",
+  "Website Inquiry",
   "Other",
 ];
 const partnerTypes = [
@@ -51,8 +51,8 @@ function Field({ label, children }) {
 
 export function IntakeForm() {
   return (
-    <form className="form-panel" aria-label="Demo family intake form">
-      <Field label="Parent/Caregiver Name"><input type="text" placeholder="Demo caregiver name" /></Field>
+    <form className="form-panel" aria-label="Family intake form">
+      <Field label="Parent/Caregiver Name"><input type="text" placeholder="Caregiver name" /></Field>
       <Field label="Email"><input type="email" placeholder="name@example.com" /></Field>
       <Field label="Phone"><input type="tel" placeholder="+1 (000) 000-0000" /></Field>
       <Field label="Child Age"><select>{childAges.map((item) => <option key={item}>{item}</option>)}</select></Field>
@@ -60,26 +60,26 @@ export function IntakeForm() {
       <Field label="Preferred Program"><select>{programs.map((item) => <option key={item}>{item}</option>)}</select></Field>
       <Field label="Main Area of Support"><select>{supportAreas.map((item) => <option key={item}>{item}</option>)}</select></Field>
       <Field label="Preferred Contact Method"><select><option>Email</option><option>Phone</option><option>Either</option></select></Field>
-      <Field label="Message"><textarea rows="5" placeholder="Please do not enter real personal health information in this demo form." /></Field>
+      <Field label="Message"><textarea rows="5" placeholder="Share general goals or questions. Please do not enter private health information here." /></Field>
       <button className="btn" type="button">Submit Intake Request</button>
-      <p className="form-note">Demo form only. In production, this can connect to EmailJS, Formspree, CRM, Google Sheets, or a backend API.</p>
+      <p className="form-note">Use this form for general questions only. A live version should use a privacy-reviewed email, CRM, secure form, or backend workflow.</p>
     </form>
   );
 }
 
 export function ContactForm({ funding = false }) {
   return (
-    <form className="form-panel" aria-label={funding ? "Demo partnership inquiry form" : "Demo contact form"}>
-      <Field label={funding ? "Name" : "Name"}><input type="text" placeholder="Demo name" /></Field>
-      {funding && <Field label="Organization"><input type="text" placeholder="Demo organization" /></Field>}
+    <form className="form-panel" aria-label={funding ? "Partnership inquiry form" : "Contact form"}>
+      <Field label={funding ? "Name" : "Name"}><input type="text" placeholder="Your name" /></Field>
+      {funding && <Field label="Organization"><input type="text" placeholder="Organization name" /></Field>}
       <Field label="Email"><input type="email" placeholder="name@example.com" /></Field>
       <Field label="Phone"><input type="tel" placeholder="+1 (000) 000-0000" /></Field>
       <Field label={funding ? "Partnership Type" : "Inquiry Type"}>
         <select>{(funding ? partnerTypes : inquiryTypes).map((item) => <option key={item}>{item}</option>)}</select>
       </Field>
-      {funding && <Field label="Funding Interest"><input type="text" placeholder="Caregiver workshops, sensory room setup, outreach..." /></Field>}
+      {funding && <Field label="Resource Interest"><input type="text" placeholder="OAP, AccessOAP, SSAH, ACSD, DTC, school resources..." /></Field>}
       {!funding && <Field label="City"><input type="text" placeholder="Toronto" /></Field>}
-      <Field label="Message"><textarea rows="5" placeholder="Please do not enter real personal health information in this demo form." /></Field>
+      <Field label="Message"><textarea rows="5" placeholder="Share general questions. Please do not enter private health information here." /></Field>
       <button className="btn" type="button">{funding ? "Submit Partnership Inquiry" : "Send Message"}</button>
     </form>
   );

@@ -8,4 +8,4 @@ Use keywords naturally: autism therapy website Canada, child development center 
 
 Do not stuff keywords or create misleading claims. Do not imply real clinic status, real funding, real impact, government approval, or medical outcomes.
 
-For future real-client conversion, replace demo disclaimers only after legal, clinical, privacy, and brand review.
+For future real-client conversion, replace fictional-brand disclaimers only after legal, clinical, privacy, and brand review.

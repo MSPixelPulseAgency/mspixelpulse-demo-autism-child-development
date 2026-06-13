@@ -10,8 +10,8 @@ export default function ProgramsPage() {
       <section className="page-hero visual-hero">
         <div>
           <span className="eyebrow">Programs</span>
-          <h1>Playful pathways for child development.</h1>
-          <p>Short program cards, warm imagery, and clear next steps for families.</p>
+          <h1>Ontario autism pathways, made easier.</h1>
+          <p>Warm visual cards for OAP, AccessOAP, school transition, urgent response, and family resource navigation.</p>
         </div>
         <div className="page-hero-media">
           <img src={images.blocks} alt="Colorful blocks for play-based child development" />
@@ -25,7 +25,7 @@ export default function ProgramsPage() {
         ]} />
       </AnimatedSection>
       <AnimatedSection className="section">
-        <SectionHeading eyebrow="Core Program Areas" title="Programs families can scan quickly." align="center" />
+          <SectionHeading eyebrow="Support Pathways" title="Resource pathways families can scan quickly." align="center" />
         <div className="program-list">
           {programs.map((program, index) => (
             <article className="program-detail" key={program.title}>

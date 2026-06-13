@@ -14,7 +14,7 @@ export default function IntakePage() {
         <div>
           <span className="eyebrow">Family Intake</span>
           <h1>A gentle first step.</h1>
-          <p>A calm demo intake flow with friendly steps, visual support, and mobile-friendly fields.</p>
+          <p>A calm intake flow for organizing strengths, communication, sensory needs, OAP questions, and school-readiness notes.</p>
         </div>
         <div className="page-hero-media">
           <img src={images.family} alt="Caregiver and child preparing for support intake" />
@@ -27,7 +27,7 @@ export default function IntakePage() {
         <div>
           <SectionHeading eyebrow="Intake Steps" title="A predictable path." />
           <div className="step-grid">{steps.map((step, index) => <div className="step-card" key={step}><span>{index + 1}</span><strong>{step}</strong></div>)}</div>
-          <IconCard icon={ClipboardCheck} title="Privacy note" text="Do not submit real personal health information through demo forms. A production site should use a reviewed privacy workflow." />
+          <IconCard icon={ClipboardCheck} title="Privacy note" text="Do not submit personal health information through this presentation form. A live service should use a reviewed privacy workflow." />
         </div>
         <IntakeForm />
       </AnimatedSection>

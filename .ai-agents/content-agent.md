@@ -2,7 +2,7 @@
 
 Brand: BrightPath Autism & Child Development Center.
 
-This is a demo-only website. Use professional, simple, parent-friendly English.
+This is a fictional-brand concept website. Use professional, simple, parent-friendly English and source-backed Ontario/Canadian autism support information.
 
 Use respectful language such as autistic children, children with autism, neurodiverse children, child development support, early intervention support, family-centered care, caregiver support, sensory-friendly support, inclusive programs, and neurodiversity-affirming language.
 

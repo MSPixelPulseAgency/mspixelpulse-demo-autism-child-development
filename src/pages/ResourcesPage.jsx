@@ -13,8 +13,8 @@ export default function ResourcesPage() {
       <section className="page-hero visual-hero">
         <div>
           <span className="eyebrow">Family Resources</span>
-          <h1>Helpful guides without the overwhelm.</h1>
-          <p>Visual cards for intake, communication, sensory needs, school planning, and caregiver wellbeing.</p>
+          <h1>Official resources without the overwhelm.</h1>
+          <p>Visual cards for autism basics, OAP, AccessOAP, funding links, school planning, and caregiver wellbeing.</p>
         </div>
         <div className="page-hero-media">
           <img src={images.art} alt="Colorful child art activity for family resources" />
@@ -44,11 +44,11 @@ export default function ResourcesPage() {
         ))}</div>
       </AnimatedSection>
       <AnimatedSection className="section soft-band">
-        <SectionHeading eyebrow="Download-style Placeholders" title="Future PDFs, shown visually." align="center" />
-        <div className="card-grid five">{downloads.map((item) => <IconCard key={item} icon={Download} title={item} text="Demo placeholder only. Real PDF can be added in production." />)}</div>
+        <SectionHeading eyebrow="Planning Checklists" title="Helpful notes families can prepare." align="center" />
+        <div className="card-grid five">{downloads.map((item) => <IconCard key={item} icon={Download} title={item} text="Use this as a planning prompt before speaking with providers or official programs." />)}</div>
       </AnimatedSection>
       <AnimatedSection className="section">
-        <IconCard icon={FileText} title="Resource disclaimer" text="Resources are informational only and do not replace professional medical, clinical, therapeutic, legal, financial, or educational advice." />
+        <IconCard icon={FileText} title="Resource disclaimer" text="Resources are informational only and do not replace professional medical, clinical, therapeutic, legal, tax, financial, or educational advice." />
       </AnimatedSection>
       <ContactCTA />
     </>

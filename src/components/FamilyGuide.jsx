@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const responses = {
-  "Help me start intake": "Start with the Intake page. Prepare your child age range, key strengths, support goals, and preferred contact method. This demo does not collect real health information.",
-  "What programs fit my child?": "Review age ranges on the Programs page, then choose the closest support area: communication, sensory needs, daily routines, school readiness, social participation, or caregiver coaching.",
-  "Show funding support options": "The Funding & Impact page shows demo priorities such as caregiver workshops, sensory-friendly equipment, digital intake tools, accessible spaces, and outreach.",
-  "Prepare questions for consultation": "Ask about program fit, referral needs, caregiver participation, session structure, accessibility, fees, funding options, and how progress is discussed.",
-  "Find caregiver resources": "Visit Family Resources for intake checklists, school-readiness prompts, caregiver wellbeing reminders, and demo funding preparation cards.",
+  "Help me start intake": "Start with your child's strengths, communication style, sensory needs, school stage, and the questions you want to ask. Do not submit private health details in this presentation form.",
+  "What programs fit my child?": "Review OAP pathways such as foundational family services, caregiver-mediated early years, core clinical services, entry to school, and urgent response navigation.",
+  "Show funding support options": "Review official links for OAP, Special Services at Home, Assistance for Children with Severe Disabilities, and the Disability Tax Credit. Speak with qualified advisors for eligibility decisions.",
+  "Prepare questions for consultation": "Ask about service fit, provider qualifications, goals, family participation, school coordination, sensory accommodations, fees, privacy, and how progress is discussed.",
+  "Find caregiver resources": "Visit Family Resources for autism overview notes, communication and sensory planning prompts, school transition questions, and official Ontario/Canada links.",
 };
 
 export default function FamilyGuide() {
@@ -21,11 +21,11 @@ export default function FamilyGuide() {
         Family Guide
       </button>
       {open && (
-        <aside className="guide-panel" aria-label="Demo Family Support Guide">
+        <aside className="guide-panel" aria-label="Family Support Guide">
           <div className="guide-head">
             <div>
               <strong>Family Support Guide</strong>
-              <span>Static demo assistant</span>
+              <span>Resource navigation helper</span>
             </div>
             <button type="button" onClick={() => setOpen(false)} aria-label="Close Family Guide">
               <X size={20} />
@@ -41,7 +41,7 @@ export default function FamilyGuide() {
             ))}
           </div>
           <Link to="/intake" className="btn btn-full" onClick={() => setOpen(false)}>Start Family Intake</Link>
-          <p className="guide-disclaimer">This guide is a demo tool and does not replace professional advice.</p>
+          <p className="guide-disclaimer">This guide organizes public information and does not replace professional advice.</p>
         </aside>
       )}
     </>

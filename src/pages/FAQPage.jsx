@@ -12,7 +12,7 @@ export default function FAQPage() {
         <div>
           <span className="eyebrow">FAQ</span>
           <h1>Clear answers, calmer browsing.</h1>
-          <p>Demo-safe answers for families, funders, and future website clients.</p>
+          <p>Ontario and Canada resource answers for families reviewing autism support pathways.</p>
         </div>
         <div className="page-hero-media">
           <img src={images.room} alt="Calm child development room for FAQ page" />

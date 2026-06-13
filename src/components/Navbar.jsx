@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { HeartHandshake, Menu, MessageCircleHeart, X } from "lucide-react";
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { brand, navLinks } from "../data/siteData";
@@ -9,7 +9,9 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <Link to="/" className="brand-mark" aria-label="BrightPath home" onClick={() => setOpen(false)}>
-        <span className="logo-dot">B</span>
+        <span className="logo-dot" aria-hidden="true">
+          <HeartHandshake size={23} />
+        </span>
         <span>{brand.shortName}</span>
       </Link>
       <button
@@ -27,7 +29,11 @@ export default function Navbar() {
             {item.label}
           </NavLink>
         ))}
-        <Link className="btn btn-small" to="/intake" onClick={() => setOpen(false)}>
+        <a className="btn btn-whatsapp btn-small nav-whatsapp" href={`https://wa.me/${brand.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
+          <MessageCircleHeart size={16} />
+          WhatsApp
+        </a>
+        <Link className="btn btn-small nav-intake" to="/intake" onClick={() => setOpen(false)}>
           Start Intake
         </Link>
       </nav>

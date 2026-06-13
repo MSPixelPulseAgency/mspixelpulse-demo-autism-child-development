@@ -79,7 +79,9 @@ p { line-height: 1.66; }
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--mint), var(--lavender) 55%, var(--peach));
+  background:
+    radial-gradient(circle at 35% 28%, rgba(255,255,255,0.95), transparent 0.55rem),
+    linear-gradient(135deg, var(--mint), var(--lavender) 55%, var(--peach));
   color: var(--navy);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.9), 0 12px 26px rgba(117, 191, 177, 0.28);
 }
@@ -107,8 +109,10 @@ p { line-height: 1.66; }
 .btn:hover { transform: translateY(-2px); filter: saturate(1.05); box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 20px 42px rgba(244, 119, 105, 0.35); }
 .btn-muted { background: linear-gradient(135deg, var(--navy), #27535b); box-shadow: 0 16px 34px rgba(16, 32, 51, 0.18); }
 .btn-light { background: rgba(255,255,255,0.82); color: var(--navy); border: 1px solid rgba(255,255,255,0.92); box-shadow: var(--soft-shadow); }
+.btn-whatsapp { background: linear-gradient(135deg, #32c77a, #128c7e); color: var(--white); box-shadow: inset 0 1px 0 rgba(255,255,255,0.45), 0 16px 34px rgba(18, 140, 126, 0.22); }
 .btn-small { min-height: 2.55rem; padding: 0.68rem 0.95rem; font-size: 0.86rem; }
 .btn-full { width: 100%; }
+.nav-intake, .nav-whatsapp { min-height: 2.45rem; padding: 0.62rem 0.9rem; line-height: 1; white-space: nowrap; }
 
 .hero, .page-hero, .section, .split-section, .cta-band { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
 .hero {
@@ -366,6 +370,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--mint-deep); box-
 .footer-grid { display: grid; grid-template-columns: 1.2fr 0.7fr 1.5fr; gap: 2rem; max-width: 1180px; margin: 0 auto; }
 .footer p, .footer a { color: rgba(255,255,255,0.78); line-height: 1.7; }
 .footer a { display: block; margin: 0.35rem 0; }
+.footer-whatsapp { display: inline-flex !important; align-items: center; gap: 0.45rem; width: fit-content; padding: 0.65rem 0.85rem; border-radius: 999px; background: rgba(255,255,255,0.1); color: var(--white) !important; border: 1px solid rgba(255,255,255,0.16); }
 .footer-brand .logo-dot { background: linear-gradient(135deg, var(--peach), var(--mint)); }
 .footer-bottom { max-width: 1180px; margin: 2rem auto 0; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.14); display: flex; justify-content: space-between; gap: 1rem; color: rgba(255,255,255,0.7); }
 
@@ -392,7 +397,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--mint-deep); box-
 }
 
 @media (max-width: 720px) {
-  body { padding-bottom: 4.6rem; }
+  body { padding-bottom: 5.4rem; }
   .navbar { top: 0.5rem; width: min(100% - 1rem, 1180px); padding: 0.55rem; }
   .brand-mark span:last-child { max-width: 9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .hero, .page-hero, .section, .split-section, .cta-band { width: min(100% - 1rem, 1180px); }
@@ -412,8 +417,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--mint-deep); box-
   .image-tile img, .image-collage .image-tile img, .image-ribbon .image-tile img, .photo-card img { height: 14.5rem; }
   .page-hero-media img { height: 16rem; }
   .cta-band, .footer-bottom { align-items: flex-start; }
-  .guide-button { bottom: 5.25rem; right: 0.75rem; }
-  .guide-panel { bottom: 9rem; right: 0.5rem; width: calc(100vw - 1rem); max-height: calc(100vh - 10rem); overflow: auto; }
+  .guide-button { bottom: 5.85rem; right: 0.75rem; padding: 0.68rem 0.86rem; min-height: 2.8rem; }
+  .guide-panel { bottom: 9.55rem; right: 0.5rem; width: calc(100vw - 1rem); max-height: calc(100vh - 10.5rem); overflow: auto; }
   .mobile-bar { position: fixed; left: 0.5rem; right: 0.5rem; bottom: 0.5rem; z-index: 34; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.25rem; padding: 0.4rem; background: rgba(16,32,51,0.94); border-radius: 20px; box-shadow: var(--shadow); }
   .mobile-bar a { min-height: 3.35rem; display: grid; place-items: center; gap: 0.15rem; color: rgba(255,255,255,0.78); font-size: 0.72rem; font-weight: 800; border-radius: 15px; }
   .mobile-bar a.active { background: rgba(255,255,255,0.12); color: var(--white); }

@@ -2,7 +2,7 @@
 
 Brand: BrightPath Autism & Child Development Center.
 
-Status: fictional demo website created by MSPixelPulseAgency for a Canadian autism support and child development center concept.
+Status: fictional brand concept created by MSPixelPulseAgency for a Canadian autism support and child development resource website.
 
 Placeholder contact details: Toronto, Ontario, Canada; +1 (000) 000-0000; hello@mspixelpulse.com; social links use #.
 

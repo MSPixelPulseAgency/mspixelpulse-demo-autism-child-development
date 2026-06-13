@@ -14,7 +14,7 @@ export default function PartnersPage() {
         <div>
           <span className="eyebrow">Community Partners</span>
           <h1>Partnerships made easier to picture.</h1>
-          <p>Schools, services, funders, and community groups can quickly see where they fit.</p>
+          <p>Schools, service providers, community groups, and family organizations can quickly see how resource navigation fits.</p>
         </div>
         <div className="page-hero-media">
           <img src={images.community} alt="Inclusive community gathering for partnership support" />
@@ -32,7 +32,7 @@ export default function PartnersPage() {
             alt={`${item} partnership visual`}
             icon={Handshake}
             title={item}
-            text="Demo collaboration content for outreach."
+            text="Collaboration content for family resource navigation and outreach."
           />
         ))}</div>
       </AnimatedSection>
@@ -43,7 +43,7 @@ export default function PartnersPage() {
           <IconCard icon={UsersRound} title="Referral pathway" text="Production versions can include secure referral instructions, eligibility details, forms, and consent-reviewed workflows." />
         </div>
         <div>
-          <SectionHeading eyebrow="Inquiry Form" title="Start a demo conversation." />
+          <SectionHeading eyebrow="Inquiry Form" title="Start a resource conversation." />
           <ContactForm funding />
         </div>
       </AnimatedSection>

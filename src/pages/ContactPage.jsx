@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircleHeart, Phone } from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
 import SectionHeading from "../components/SectionHeading";
 import { ContactForm } from "../components/Forms";
@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div>
           <span className="eyebrow">Contact</span>
           <h1>Reach out with a clear next step.</h1>
-          <p>Demo contact paths for family intake, programs, funding, partners, and website inquiries.</p>
+          <p>Contact paths for family intake questions, OAP navigation, resource planning, funding links, and partnerships.</p>
         </div>
         <div className="page-hero-media">
           <img src={images.community} alt="Warm community support image for contact page" />
@@ -23,11 +23,15 @@ export default function ContactPage() {
       </AnimatedSection>
       <AnimatedSection className="split-section">
         <div>
-          <SectionHeading eyebrow="Demo Contact Details" title={brand.name} text="Placeholder details for a fictional MSPixelPulseAgency demo." />
+          <SectionHeading eyebrow="Contact Details" title={brand.name} text="BrightPath is a fictional brand concept using safe placeholder contact details." />
           <div className="stack">
             <IconCard icon={MapPin} title="Location" text={brand.location} />
             <IconCard icon={Phone} title="Phone" text={brand.phone} />
             <IconCard icon={Mail} title="Email" text={brand.email} />
+            <a className="btn btn-whatsapp btn-full" href={`https://wa.me/${brand.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noreferrer">
+              <MessageCircleHeart size={18} />
+              Chat on WhatsApp
+            </a>
           </div>
         </div>
         <ContactForm />

@@ -11,6 +11,7 @@ import {
   Home,
   Layers3,
   MessageCircle,
+  Phone,
   Puzzle,
   School,
   ShieldCheck,
@@ -25,6 +26,7 @@ export const brand = {
   tagline: "Helping children grow with confidence, communication, and care.",
   location: "Toronto, Ontario, Canada",
   phone: "+1 (000) 000-0000",
+  whatsapp: "+10000000000",
   email: "hello@mspixelpulse.com",
   socials: "#",
 };
@@ -42,19 +44,19 @@ export const navLinks = [
 
 export const pageMeta = {
   "/": {
-    title: "BrightPath Autism & Child Development Center | Demo Website Canada",
+    title: "BrightPath Autism & Child Development Center | Ontario Family Support",
     description:
-      "A compassionate autism support center website demo for child development programs, early intervention, caregiver support, resources, and funding proposal content in Canada.",
+      "Warm Ontario autism and child development support information with OAP, AccessOAP, caregiver resources, school readiness, and funding guidance.",
   },
   "/about": {
     title: "About | BrightPath Autism & Child Development Center",
     description:
-      "Learn about the fictional BrightPath mission, values, and neurodiversity-affirming child development website concept.",
+      "Learn about BrightPath's family-centered approach to autism-informed navigation, caregiver education, and child development support.",
   },
   "/programs": {
     title: "Programs | Autism & Child Development Support",
     description:
-      "Explore demo autism support programs for early intervention, communication, sensory support, school readiness, caregiver coaching, and community participation.",
+      "Explore Ontario-informed autism support pathways including foundational family services, caregiver-mediated early years, core clinical services, school entry, and urgent response navigation.",
   },
   "/services": {
     title: "Services | Child Development & Family Support",
@@ -62,34 +64,34 @@ export const pageMeta = {
       "Review family intake, referral guidance, ABA-informed support, speech-style communication support, occupational and sensory support, and caregiver workshops.",
   },
   "/funding-impact": {
-    title: "Funding & Impact | BrightPath Autism Support Demo",
+    title: "Funding & Impact | BrightPath Autism Support Resources",
     description:
-      "A funding-ready demo page presenting community needs, funding priorities, placeholder impact metrics, and partnership opportunities.",
+      "Ontario and Canada resource guidance for autism supports, AccessOAP, Special Services at Home, ACSD, Disability Tax Credit, and community partnerships.",
   },
   "/resources": {
     title: "Family Resources | Autism Support & Child Development",
     description:
-      "Parent-friendly demo resources for intake preparation, autism support, communication, sensory needs, school transitions, and caregiver wellbeing.",
+      "Parent-friendly resources for intake preparation, autism support, communication, sensory needs, school transitions, and caregiver wellbeing.",
   },
   "/intake": {
     title: "Family Intake | BrightPath Autism & Child Development Center",
     description:
-      "A simple demo family intake page for autism support, child development programs, and caregiver next-step guidance.",
+      "A simple family intake page for autism support navigation, OAP preparation, caregiver goals, school readiness, and child development next steps.",
   },
   "/partners": {
     title: "Community Partners | BrightPath",
     description:
-      "Explore demo partnership pathways for schools, community organizations, healthcare providers, charities, donors, and volunteers.",
+      "Explore partnership pathways for schools, community organizations, healthcare providers, charities, donors, and volunteers.",
   },
   "/faq": {
     title: "FAQ | BrightPath Autism & Child Development Center",
     description:
-      "Frequently asked questions about this fictional autism therapy website Canada demo, services, funding content, intake forms, and safe usage.",
+      "Frequently asked questions about autism support, OAP registration, AccessOAP, funding resources, intake forms, and safe usage.",
   },
   "/contact": {
     title: "Contact | BrightPath Autism & Child Development Center",
     description:
-      "Contact the fictional BrightPath demo center for intake, program questions, funding partnerships, community partnerships, and website demo inquiries.",
+      "Contact BrightPath for intake, program questions, Ontario autism resource navigation, funding partnerships, and community partnerships.",
   },
 };
 
@@ -175,35 +177,41 @@ export const pageVisuals = {
   ],
   contact: [
     { src: images.community, alt: "Community members sharing a warm moment", title: "Community-ready", text: "Contact paths for families and partners." },
-    { src: images.room, alt: "Clean child development room", title: "Welcoming space", text: "Placeholder details stay demo-safe." },
+    { src: images.room, alt: "Clean child development room", title: "Welcoming space", text: "Clear contact paths and privacy-aware forms." },
     { src: images.familyCare, alt: "Caregiver and child support moment", title: "Family first", text: "Clear next steps for every inquiry." },
   ],
 };
 
 export const videos = [
   {
-    title: "A calm walk-through for new families",
-    text: "Demo video block for explaining intake, programs, funding support, and next steps in a friendly way.",
-    embed: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Autism support information for families",
+    text: "A relevant video resource for families learning about autism support, communication, development, and next steps.",
+    embed: "https://www.youtube.com/embed/VT5Dl1vXGUc?si=7fWp7IQClhepQ3SH",
   },
 ];
 
 export const governmentLinks = [
   {
     title: "Ontario Autism Program",
-    text: "Official Ontario information for autism services and program pathways.",
+    text: "Official Ontario information about OAP registration, eligibility, service options, and supports for children and youth.",
     href: "https://www.ontario.ca/page/ontario-autism-program",
     icon: ClipboardList,
   },
   {
+    title: "AccessOAP",
+    text: "Independent intake organization for the OAP, including account setup, care coordinators, and family portal access.",
+    href: "https://accessoap.ca",
+    icon: Phone,
+  },
+  {
     title: "Autism Spectrum Disorder in Canada",
-    text: "Government of Canada public health information and national autism context.",
+    text: "Government of Canada overview of autism as a lifelong neurodevelopmental condition and individualized supports.",
     href: "https://www.canada.ca/en/public-health/services/diseases/autism-spectrum-disorder-asd.html",
     icon: Brain,
   },
   {
     title: "Disability Tax Credit",
-    text: "Canada Revenue Agency information families may review with qualified advisors.",
+    text: "CRA information about the non-refundable tax credit for people with severe and prolonged impairments.",
     href: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit.html",
     icon: ShieldCheck,
   },
@@ -213,159 +221,171 @@ export const governmentLinks = [
     href: "https://www.ontario.ca/page/special-services-home",
     icon: HandHeart,
   },
+  {
+    title: "Assistance for Children with Severe Disabilities",
+    text: "Ontario program information for eligible families who may need help with disability-related costs.",
+    href: "https://www.ontario.ca/page/assistance-children-severe-disabilities-program",
+    icon: HeartHandshake,
+  },
+  {
+    title: "Autism Ontario",
+    text: "Ontario autism community resources, events, learning materials, school supports, and family information.",
+    href: "https://www.autismontario.com",
+    icon: Users,
+  },
 ];
 
 export const programs = [
   {
-    title: "Early Intervention Support",
-    age: "18 months - 6 years",
-    focus: "Communication, play, daily routines, caregiver support",
+    title: "AccessOAP & OAP Registration Navigation",
+    age: "Ontario families under age 18",
+    focus: "AccessOAP account setup, eligibility documents, care coordinator questions",
     icon: Sprout,
     text:
-      "Gentle early support for play, communication, routines, and family confidence.",
+      "Guidance for families preparing to register or update information through AccessOAP.",
     expect:
-      "Families can expect a calm intake, strengths-based goals, caregiver-friendly next steps, and progress conversations.",
+      "Families review age, Ontario residency, written diagnosis requirements, and practical questions for AccessOAP.",
   },
   {
-    title: "Communication & Speech Support",
-    age: "2 - 12 years",
+    title: "Foundational Family Services",
+    age: "OAP-registered families",
     focus:
-      "Expressive language, receptive language, social communication, visual supports",
+      "Workshops, coaching, family education, navigation, transition planning",
     icon: MessageCircle,
     text:
-      "Communication development support with visual tools and family-centered strategies.",
+      "Family-focused learning and navigation supports that can help caregivers understand next steps.",
     expect:
-      "Families can expect simple communication goals, activity ideas, and referral-aware guidance for qualified speech services.",
+      "Families can prepare questions, organize goals, and connect official resources with daily routines.",
   },
   {
-    title: "Occupational & Sensory Support",
-    age: "2 - 12 years",
-    focus: "Sensory regulation, fine motor, daily living skills, classroom readiness",
+    title: "Caregiver-Mediated Early Years",
+    age: "12 - 48 months",
+    focus: "Caregiver coaching, social communication, play, early learning",
     icon: Puzzle,
     text:
-      "Sensory-aware routines, fine motor play, and daily skill support in calm spaces.",
+      "Ontario-informed guidance for families exploring caregiver-mediated early years programs.",
     expect:
-      "Families can expect sensory-friendly planning, everyday routine support, and recommendations to consult qualified professionals.",
+      "Families learn what to ask providers and how to match supports with a child's strengths and needs.",
   },
   {
-    title: "Behaviour & Daily Living Skills",
-    age: "3 - 14 years",
+    title: "Core Clinical Services Planning",
+    age: "Children and youth in OAP",
     focus:
-      "Routines, independence, transitions, self-help skills, emotional regulation",
+      "Behavioural services, speech-language pathology, occupational therapy, mental health supports",
     icon: Layers3,
     text:
-      "ABA-informed skill building language for routines, transitions, and independence.",
+      "Support for families comparing core clinical service options and preparing service goals.",
     expect:
-      "Families can expect respectful support planning that avoids promises and focuses on practical, observable goals.",
+      "Families keep language practical, respectful, individualized, and reviewed with qualified professionals.",
   },
   {
-    title: "School Readiness Program",
-    age: "4 - 8 years",
+    title: "Entry to School Preparation",
+    age: "Starting kindergarten or Grade 1",
     focus:
-      "Classroom routines, group participation, communication, transitions, self-advocacy",
+      "Classroom routines, transition planning, communication, group participation",
     icon: School,
     text:
-      "Support for classroom routines, group participation, and confident transitions.",
+      "Planning support for children entering school and families preparing for classroom routines.",
     expect:
-      "Families can expect school-readiness checklists, transition planning, and collaboration-friendly summaries.",
+      "Families organize school-readiness questions, strengths, sensory needs, and transition supports.",
   },
   {
-    title: "Parent & Caregiver Coaching",
-    age: "All ages",
-    focus: "Home strategies, routines, understanding needs, confidence, support planning",
+    title: "Urgent Response Navigation",
+    age: "Eligible children and youth",
+    focus: "Time-sensitive needs, safety concerns, rapid support pathways",
     icon: HeartHandshake,
     text:
-      "Caregiver guidance that helps families understand needs and prepare next steps.",
+      "Information pathway for families who need to understand urgent response services.",
     expect:
-      "Families can expect plain-language coaching, resource navigation, and supportive planning without medical advice.",
+      "Families are directed toward official lead organizations and qualified crisis or health supports when needed.",
   },
   {
-    title: "Social Skills Groups",
-    age: "5 - 14 years",
-    focus: "Peer interaction, play, turn-taking, group communication",
+    title: "Sensory & Communication Planning",
+    age: "Individualized by child",
+    focus: "Communication differences, sensory processing differences, visual supports",
     icon: Users,
     text:
-      "Small-group participation concepts for play, communication, and belonging.",
+      "Practical planning for daily routines, school meetings, and provider conversations.",
     expect:
-      "Families can expect inclusive group structures, careful pacing, and strengths-based participation goals.",
+      "Families document preferences, accommodations, communication styles, and supportive environments.",
   },
   {
-    title: "Community Participation Program",
-    age: "6 - 16 years",
-    focus: "Outings, confidence, life skills, safe community participation",
+    title: "Community & School Resource Navigation",
+    age: "All family stages",
+    focus: "Autism Ontario resources, school supports, community events, funding links",
     icon: Compass,
     text:
-      "Community confidence, safe participation, and family-supported life skills.",
+      "A warm way to connect official resources with real-life family planning.",
     expect:
-      "Families can expect demo outings, confidence-building goals, and caregiver-informed safety planning.",
+      "Families leave with organized links, questions, and next-step resource pathways.",
   },
 ];
 
 export const services = [
-  "Autism support planning",
-  "Family intake consultation",
-  "Developmental needs screening referral guidance",
-  "Speech and communication support",
-  "Occupational and sensory support",
-  "ABA-informed skill building",
-  "Parent coaching",
-  "School readiness support",
-  "Social skills groups",
-  "Caregiver workshops",
-  "Community navigation",
-  "Funding support guidance",
+  "AccessOAP registration preparation",
+  "OAP eligibility document checklist",
+  "Foundational family service navigation",
+  "Caregiver-mediated early years guidance",
+  "Core clinical services planning",
+  "Entry to school preparation",
+  "Urgent response service direction",
+  "Autism Ontario resource navigation",
+  "Special Services at Home information",
+  "ACSD and DTC resource guidance",
+  "Sensory and communication planning notes",
+  "School and community support planning",
 ];
 
 export const impactMetrics = [
-  { value: "150+", label: "demo families supported", icon: Users },
-  { value: "8", label: "demo program areas", icon: Layers3 },
-  { value: "40+", label: "demo caregiver workshops", icon: CalendarCheck },
-  { value: "12", label: "demo community partners", icon: HandHeart },
-  { value: "85%", label: "demo families report clearer next steps", icon: CheckCircle2 },
-  { value: "100%", label: "placeholder metrics for proposal layout only", icon: ShieldCheck },
+  { value: "OAP", label: "Ontario Autism Program registration and services", icon: ClipboardList },
+  { value: "AccessOAP", label: "Independent intake and care coordination pathway", icon: Phone },
+  { value: "DTC", label: "CRA tax credit information for eligible impairments", icon: ShieldCheck },
+  { value: "SSAH", label: "Ontario Special Services at Home resource link", icon: Home },
+  { value: "ACSD", label: "Assistance for Children with Severe Disabilities information", icon: HeartHandshake },
+  { value: "Autism Ontario", label: "Community learning, events, school resources, and supports", icon: Users },
 ];
 
 export const resources = [
-  { title: "Understanding Autism", text: "Plain-language overview prompts for respectful family education.", icon: Brain },
-  { title: "Communication Supports", text: "Ideas for visual supports, expressive language, and questions to ask professionals.", icon: MessageCircle },
-  { title: "Sensory Needs", text: "Supportive language for sensory preferences, regulation, and calm routines.", icon: Sparkles },
-  { title: "School Transition", text: "Checklists for classroom routines, meetings, and transition planning.", icon: School },
-  { title: "Daily Routines", text: "Family-friendly planning cards for home routines and predictable next steps.", icon: Home },
-  { title: "Caregiver Wellbeing", text: "Prompts for support circles, rest, and asking for help without guilt.", icon: HeartHandshake },
-  { title: "Funding Pathways", text: "Demo preparation prompts for grants, community programs, and documentation.", icon: ClipboardList },
-  { title: "Community Programs", text: "A simple way to organize local supports, workshops, and partner contacts.", icon: HandHeart },
+  { title: "Understanding Autism", text: "Autism is a lifelong neurodevelopmental condition; support should adapt to individual needs.", icon: Brain },
+  { title: "Communication Differences", text: "Families can note how a child communicates, connects, understands language, and uses supports.", icon: MessageCircle },
+  { title: "Sensory Processing", text: "Document sensory preferences, regulation supports, and environments that feel easier for the child.", icon: Sparkles },
+  { title: "School Transition", text: "Prepare questions about classroom routines, accommodations, entry to school supports, and communication.", icon: School },
+  { title: "Daily Routines", text: "Organize notes about sleep, meals, transitions, self-help skills, and predictable routines.", icon: Home },
+  { title: "Caregiver Wellbeing", text: "Caregivers can ask for navigation help, peer learning, respite information, and community support.", icon: HeartHandshake },
+  { title: "Funding Pathways", text: "Review OAP, SSAH, ACSD, and DTC links with qualified professionals where needed.", icon: ClipboardList },
+  { title: "Community Programs", text: "Autism Ontario offers events, learning resources, school supports, and family information.", icon: HandHeart },
 ];
 
 export const faqItems = [
-  ["Is BrightPath a real clinic?", "No. This is a fictional demo website created by MSPixelPulseAgency."],
-  ["Does this website provide medical advice?", "No. This demo provides informational website content only and does not replace advice from qualified professionals."],
-  ["Can this website be customized for a real autism therapy center?", "Yes. Branding, services, intake forms, funding pages, resources, and contact details can be customized."],
-  ["Can this work for ABA therapy clinics?", "Yes. The layout can be adapted for ABA-informed services, with proper professional and legal review."],
-  ["Can this work for speech therapy?", "Yes. It includes communication support sections that can be customized for speech-language services."],
-  ["Can this work for occupational therapy?", "Yes. It includes sensory, fine motor, daily living, and school readiness sections."],
-  ["Can this website help with funding proposals?", "Yes. It includes a Funding & Impact page designed to present community need, funding priorities, impact metrics, and partnership opportunities."],
-  ["Are the impact numbers real?", "No. All numbers are demo placeholders only."],
-  ["Can parents submit intake forms?", "The demo includes intake forms visually. In production, forms can connect to email, CRM, Google Sheets, or a backend."],
-  ["Can this website support donations?", "Yes. Donation CTAs and partner inquiry sections can be added or connected to a donation platform."],
-  ["Can this website be bilingual?", "Yes. It can be expanded with English/French pages for Canadian accessibility."],
-  ["Is the site mobile-friendly?", "Yes. The website is built to be fully responsive and mobile-first."],
-  ["Can this be used for a non-profit?", "Yes. It can be adapted for non-profit organizations, charities, community programs, or private clinics."],
-  ["Can this include AI support?", "Yes. The demo includes a frontend Family Guide assistant for navigation and intake support."],
-  ["Can it connect to government funding pages?", "Yes. Approved external resources can be linked in production, but this demo does not imply government approval."],
+  ["Is BrightPath a real clinic?", "BrightPath is a fictional brand concept, but the resource information links to official Ontario and Canadian sources."],
+  ["Does this website provide medical advice?", "No. It organizes information and questions families may discuss with qualified health, education, tax, or service professionals."],
+  ["What is autism?", "The Government of Canada describes autism as a lifelong neurodevelopmental condition. Autistic people may communicate, connect, process sensory information, and learn differently."],
+  ["Who can register for the Ontario Autism Program?", "Ontario states that children and youth under 18 who live in Ontario and have a written autism diagnosis from a qualified professional can register for the OAP."],
+  ["What is AccessOAP?", "AccessOAP is the OAP's independent intake organization. It supports registration, care coordination, service options, and family portal access."],
+  ["What are foundational family services?", "Ontario describes these as services available to families registered in the OAP, such as workshops, coaching, navigation, and family education."],
+  ["What are caregiver-mediated early years programs?", "Ontario identifies these programs for OAP-registered children between 12 and 48 months, focused on helping caregivers support early development."],
+  ["What are core clinical services?", "Ontario lists core clinical services as needs-based supports that may include behavioural services, speech-language pathology, occupational therapy, and mental health services."],
+  ["What is the entry to school program?", "Ontario describes it as support for OAP-registered children starting kindergarten or Grade 1."],
+  ["What are urgent response services?", "Ontario provides urgent response services for eligible children or youth with urgent needs through local lead organizations."],
+  ["What is the Disability Tax Credit?", "The CRA describes the DTC as a non-refundable tax credit for people with severe and prolonged impairments, or their supporting family member, if approved."],
+  ["What is Special Services at Home?", "Ontario lists Special Services at Home as a related support program families may review for children with developmental or physical disabilities."],
+  ["What is ACSD?", "Assistance for Children with Severe Disabilities is an Ontario program families may review when disability-related costs create financial need."],
+  ["Can this site imply government approval?", "No. It can link to official resources, but it must not imply endorsement, approval, funding, licensing, or partnership unless those are real and documented."],
+  ["Can families submit real health information here?", "No. The current forms are presentation forms only and should not receive personal health information without a proper privacy-reviewed production setup."],
   ["Does this website claim to cure autism?", "No. The website never uses cure-based language. It focuses on support, development, family guidance, and inclusion."],
 ];
 
 export const fundingPriorities = [
-  "Therapy room setup",
-  "Sensory-friendly equipment",
-  "Caregiver workshops",
-  "Low-cost program spaces",
-  "Staff training",
-  "School readiness materials",
-  "Community outreach",
-  "Digital intake and reporting tools",
-  "Transportation support",
-  "Accessibility improvements",
+  "OAP registration preparation",
+  "AccessOAP account setup",
+  "Foundational family services",
+  "Caregiver-mediated early years",
+  "Core clinical services planning",
+  "Entry to school transition",
+  "Urgent response direction",
+  "SSAH resource review",
+  "ACSD and DTC information",
+  "Autism Ontario community supports",
 ];
 
 export const partnerTypes = [

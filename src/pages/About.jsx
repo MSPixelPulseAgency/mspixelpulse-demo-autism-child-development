@@ -13,8 +13,8 @@ export default function About() {
       <section className="page-hero visual-hero">
         <div>
           <span className="eyebrow">About BrightPath</span>
-          <h1>A softer story for family-centered support.</h1>
-          <p>A fictional community center concept showing how services, funding, resources, and intake can feel warm and easy to explore.</p>
+          <h1>A softer path through autism support.</h1>
+          <p>BrightPath organizes Ontario autism resources, caregiver questions, child development planning, and official support links in a warm family-friendly way.</p>
         </div>
         <div className="page-hero-media">
           <img src={images.family} alt="Family sharing a warm moment together" />
@@ -25,8 +25,8 @@ export default function About() {
       </AnimatedSection>
       <AnimatedSection className="split-section">
         <div className="stack">
-          <IconCard icon={Heart} title="Mission" text="Compassionate programs, caregiver education, inclusive development support, and community partnerships." />
-          <IconCard icon={ShieldCheck} title="Vision" text="A community where every child can grow, communicate, participate, and feel understood." />
+          <IconCard icon={Heart} title="Mission" text="Help families understand OAP pathways, caregiver learning options, school transitions, and child development support questions." />
+          <IconCard icon={ShieldCheck} title="Vision" text="A community where autistic children and neurodiverse families can find respectful information, inclusive spaces, and clearer next steps." />
         </div>
         <ImageTile src={images.family} alt="Family spending time together in a warm community setting" title="Family-centered communication" text="The website keeps content plain, respectful, and easy to scan." />
       </AnimatedSection>
@@ -40,17 +40,17 @@ export default function About() {
               alt={`${value} value visual`}
               icon={HandHeart}
               title={value}
-              text="Respectful, accessible, family-centered communication."
+              text="Respectful, accessible, family-centered support navigation."
             />
           ))}
         </div>
       </AnimatedSection>
       <AnimatedSection className="split-section reverse">
         <div>
-          <SectionHeading eyebrow="Who We Support" title="Built for families and community partners." text="The content structure can be adapted for real organizations after professional, legal, and clinical review." />
+          <SectionHeading eyebrow="Who We Support" title="Built for families and community partners." text="The content is designed for parents, caregivers, schools, service providers, community organizations, and support partners." />
           <div className="mini-list">{supports.map((item) => <span key={item}>{item}</span>)}</div>
         </div>
-        <IconCard icon={Users} title="Why this website exists" text="This fictional demo website shows how a child development center can communicate services, impact, funding needs, and family intake in a professional, accessible way." />
+        <IconCard icon={Users} title="Why this website exists" text="Families often need one calm place to organize official links, intake questions, school transition notes, and funding/resource pathways." />
       </AnimatedSection>
       <ContactCTA />
     </>
