@@ -95,7 +95,7 @@ export const pageMeta = {
 
 export const images = {
   hero:
-    "https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1400&q=85",
   classroom:
     "https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1000&q=80",
   blocks:
@@ -114,6 +114,70 @@ export const images = {
     "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80",
   sensory:
     "https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=1000&q=80",
+  learning:
+    "https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=1000&q=80",
+  playroom:
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80",
+  caregiver:
+    "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1000&q=80",
+  sensoryRoom:
+    "https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=1000&q=80",
+  school:
+    "https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1000&q=80",
+  community:
+    "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80",
+  familyCare:
+    "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1000&q=80",
+  childBlocks:
+    "https://images.unsplash.com/photo-1560421683-6856ea585c78?auto=format&fit=crop&w=1000&q=80",
+};
+
+export const pageVisuals = {
+  home: [
+    { src: images.classroom, alt: "Warm classroom with child-friendly learning materials", title: "Learning spaces", text: "Soft, organized areas for growth." },
+    { src: images.blocks, alt: "Colorful blocks for play-based learning", title: "Play-based support", text: "Visual routines and gentle discovery." },
+    { src: images.family, alt: "Caregiver and child spending warm time together", title: "Family connection", text: "Caregivers are part of the plan." },
+  ],
+  about: [
+    { src: images.family, alt: "Diverse family smiling together outdoors", title: "Family-centered", text: "Warm language for parent trust." },
+    { src: images.room, alt: "Calm child development room with tables", title: "Accessible spaces", text: "Designed to feel clear and welcoming." },
+    { src: images.art, alt: "Child drawing with bright art supplies", title: "Creative growth", text: "Every child’s pace matters." },
+  ],
+  programs: [
+    images.blocks,
+    images.learning,
+    images.sensory,
+    images.playroom,
+    images.school,
+    images.caregiver,
+    images.group,
+    images.community,
+  ],
+  services: [
+    { src: images.consult, alt: "Caregiver consultation in a supportive setting", title: "Family consultation" },
+    { src: images.sensoryRoom, alt: "Soft sensory-friendly room details", title: "Sensory routines" },
+    { src: images.school, alt: "Classroom setup for school readiness", title: "School readiness" },
+  ],
+  funding: [
+    { src: images.community, alt: "Community group gathered outdoors", title: "Community partnerships", text: "Funding stories feel human and local." },
+    { src: images.room, alt: "Child-friendly program room", title: "Program spaces", text: "Visual priorities for grants and donors." },
+    { src: images.caregiver, alt: "Caregiver and child learning together", title: "Caregiver education", text: "Workshops and next-step guidance." },
+  ],
+  resources: [
+    { src: images.art, alt: "Child art activity with colorful supplies", title: "Printable guides", text: "Download-style resource cards." },
+    { src: images.school, alt: "Learning table in a bright classroom", title: "School planning", text: "Transition prompts and checklists." },
+    { src: images.familyCare, alt: "Family support moment outdoors", title: "Caregiver wellbeing", text: "Support for the whole family." },
+  ],
+  intake: [
+    { src: images.family, alt: "Caregiver holding a child in a warm family setting", title: "Start gently", text: "Simple steps and friendly forms." },
+    { src: images.consult, alt: "Supportive conversation at a table", title: "Talk through needs", text: "No overwhelming intake language." },
+    { src: images.playroom, alt: "Playful learning area for child development intake", title: "Choose support", text: "Programs feel easier to explore." },
+  ],
+  contact: [
+    { src: images.community, alt: "Community members sharing a warm moment", title: "Community-ready", text: "Contact paths for families and partners." },
+    { src: images.room, alt: "Clean child development room", title: "Welcoming space", text: "Placeholder details stay demo-safe." },
+    { src: images.familyCare, alt: "Caregiver and child support moment", title: "Family first", text: "Clear next steps for every inquiry." },
+  ],
 };
 
 export const videos = [

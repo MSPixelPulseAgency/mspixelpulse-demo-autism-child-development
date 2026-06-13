@@ -1,21 +1,29 @@
 import { AlertCircle, CheckCircle2 } from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
 import SectionHeading from "../components/SectionHeading";
-import { IconCard, ImageTile } from "../components/Card";
+import { IconCard, ImageRibbon, ImageTile, PhotoCard } from "../components/Card";
 import ContactCTA from "../components/ContactCTA";
-import { images, services } from "../data/siteData";
+import { images, pageVisuals, services } from "../data/siteData";
 
 export default function ServicesPage() {
   return (
     <>
-      <section className="page-hero">
-        <span className="eyebrow">Services</span>
-        <h1>Child development and family support services, explained carefully.</h1>
-        <p>This service page is written for a demo autism support center website and uses referral-aware, non-medical wording.</p>
+      <section className="page-hero visual-hero">
+        <div>
+          <span className="eyebrow">Services</span>
+          <h1>Support services, shown simply.</h1>
+          <p>Short cards and calm visuals explain services without heavy clinical language.</p>
+        </div>
+        <div className="page-hero-media">
+          <img src={images.consult} alt="Supportive caregiver consultation" />
+        </div>
       </section>
+      <AnimatedSection className="section">
+        <ImageRibbon items={pageVisuals.services.map((item) => ({ ...item, text: "Demo-safe service visual." }))} />
+      </AnimatedSection>
       <AnimatedSection className="split-section">
         <div>
-          <SectionHeading eyebrow="Offerings" title="Support families can browse with confidence." />
+          <SectionHeading eyebrow="Offerings" title="Browse support at a glance." />
           <div className="service-grid">
             {services.map((service) => <span key={service}><CheckCircle2 size={18} />{service}</span>)}
           </div>
@@ -23,8 +31,12 @@ export default function ServicesPage() {
         <ImageTile src={images.consult} alt="Caregiver consultation in a professional support setting" title="Supportive consultation flow" text="The copy avoids diagnosis claims and encourages qualified professional guidance." />
       </AnimatedSection>
       <AnimatedSection className="section soft-band">
-        <SectionHeading eyebrow="Important Safety Note" title="Professional review matters." align="center" />
-        <IconCard icon={AlertCircle} title="Referral-aware language" text="Developmental needs screening referral guidance does not mean diagnosis. Families should consult qualified healthcare, clinical, and education professionals for assessment, diagnosis, therapy, and support decisions." />
+        <SectionHeading eyebrow="Careful Language" title="Referral-aware and demo-safe." align="center" />
+        <div className="card-grid three">
+          <IconCard icon={AlertCircle} title="No diagnosis claims" text="Screening referral guidance does not mean diagnosis." />
+          <PhotoCard src={images.sensoryRoom} alt="Sensory-friendly support room" title="Calm environment" text="Visuals stay supportive and respectful." />
+          <IconCard icon={CheckCircle2} title="Professional review" text="Families should consult qualified professionals for decisions." />
+        </div>
       </AnimatedSection>
       <ContactCTA />
     </>

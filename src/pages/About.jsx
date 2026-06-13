@@ -1,31 +1,48 @@
 import AnimatedSection from "../components/AnimatedSection";
 import SectionHeading from "../components/SectionHeading";
-import { IconCard, ImageTile } from "../components/Card";
+import { IconCard, ImageRibbon, ImageTile, PhotoCard } from "../components/Card";
 import ContactCTA from "../components/ContactCTA";
 import { HandHeart, Heart, ShieldCheck, Users } from "lucide-react";
-import { images } from "../data/siteData";
+import { images, pageVisuals } from "../data/siteData";
 
 export default function About() {
   const values = ["Respect", "Inclusion", "Dignity", "Family partnership", "Accessibility", "Evidence-informed care", "Neurodiversity-affirming language"];
   const supports = ["Autistic children", "Children with developmental delays", "Neurodiverse children", "Families and caregivers", "School-age children needing transition support", "Parents looking for guidance", "Community partners"];
   return (
     <>
-      <section className="page-hero">
-        <span className="eyebrow">About BrightPath</span>
-        <h1>A compassionate demo concept for child development support.</h1>
-        <p>BrightPath is a fictional community-based center concept created to show how an autism support organization can present programs, services, impact, funding needs, family resources, intake forms, and community partnerships.</p>
+      <section className="page-hero visual-hero">
+        <div>
+          <span className="eyebrow">About BrightPath</span>
+          <h1>A softer story for family-centered support.</h1>
+          <p>A fictional community center concept showing how services, funding, resources, and intake can feel warm and easy to explore.</p>
+        </div>
+        <div className="page-hero-media">
+          <img src={images.family} alt="Family sharing a warm moment together" />
+        </div>
       </section>
+      <AnimatedSection className="section">
+        <ImageRibbon items={pageVisuals.about} />
+      </AnimatedSection>
       <AnimatedSection className="split-section">
         <div className="stack">
-          <IconCard icon={Heart} title="Mission" text="To support neurodiverse children and their families through compassionate programs, caregiver education, inclusive development support, and community partnerships." />
+          <IconCard icon={Heart} title="Mission" text="Compassionate programs, caregiver education, inclusive development support, and community partnerships." />
           <IconCard icon={ShieldCheck} title="Vision" text="A community where every child can grow, communicate, participate, and feel understood." />
         </div>
         <ImageTile src={images.family} alt="Family spending time together in a warm community setting" title="Family-centered communication" text="The website keeps content plain, respectful, and easy to scan." />
       </AnimatedSection>
       <AnimatedSection className="section">
-        <SectionHeading eyebrow="Values" title="Principles that guide the demo content." align="center" />
+        <SectionHeading eyebrow="Values" title="Soft principles, clear presentation." align="center" />
         <div className="card-grid four">
-          {values.map((value) => <IconCard key={value} icon={HandHeart} title={value} text="Designed for respectful, accessible, family-centered communication." />)}
+          {values.map((value, index) => (
+            <PhotoCard
+              key={value}
+              src={pageVisuals.about[index % pageVisuals.about.length].src}
+              alt={`${value} value visual`}
+              icon={HandHeart}
+              title={value}
+              text="Respectful, accessible, family-centered communication."
+            />
+          ))}
         </div>
       </AnimatedSection>
       <AnimatedSection className="split-section reverse">

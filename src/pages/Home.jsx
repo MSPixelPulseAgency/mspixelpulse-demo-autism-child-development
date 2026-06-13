@@ -11,12 +11,13 @@ import {
 import { Link } from "react-router-dom";
 import AnimatedSection from "../components/AnimatedSection";
 import SectionHeading from "../components/SectionHeading";
-import { IconCard, ImageTile } from "../components/Card";
+import { IconCard, ImageRibbon, ImageTile, PhotoCard } from "../components/Card";
 import ContactCTA from "../components/ContactCTA";
 import {
   governmentLinks,
   images,
   impactMetrics,
+  pageVisuals,
   programs,
   resources,
   trustItems,
@@ -35,8 +36,8 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <span className="eyebrow">Fictional demo website for MSPixelPulseAgency</span>
-          <h1>Warm autism support website for families and child development centers.</h1>
-          <p>A polished, accessible demo experience for early intervention, caregiver support, therapy programs, school readiness, funding guidance, and community-based child development services.</p>
+          <h1>Warm support for growing children.</h1>
+          <p>A soft, visual demo for family intake, child development programs, school readiness, and caregiver support.</p>
           <div className="hero-actions">
             <Link className="btn" to="/intake">Start Family Intake <ArrowRight size={18} /></Link>
             <Link className="btn btn-muted" to="/programs">View Programs</Link>
@@ -60,15 +61,29 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection className="section">
-        <SectionHeading eyebrow="Programs" title="Support options families can understand quickly." text="Each program uses clear, respectful language, age ranges, visual cards, and gentle next steps so parents do not feel overwhelmed." align="center" />
+        <SectionHeading eyebrow="Programs" title="Simple support pathways." text="Visual cards, short descriptions, and clear age ranges help parents find the right next step." align="center" />
         <div className="card-grid three">
-          {overview.map((program) => <IconCard key={program.title} icon={program.icon} title={program.title} meta={program.age} text={program.text} cta="Learn More" />)}
+          {overview.map((program, index) => (
+            <PhotoCard
+              key={program.title}
+              src={pageVisuals.programs[index]}
+              alt={`${program.title} visual for child development support`}
+              icon={program.icon}
+              title={program.title}
+              text={`${program.age} · ${program.text}`}
+            />
+          ))}
         </div>
+      </AnimatedSection>
+
+      <AnimatedSection className="section">
+        <SectionHeading eyebrow="Warm Visual Flow" title="A calmer website families can feel their way through." align="center" />
+        <ImageRibbon items={pageVisuals.home} />
       </AnimatedSection>
 
       <AnimatedSection className="split-section">
         <div>
-          <SectionHeading eyebrow="Parent Journey" title="A smoother intake journey from first visit to first plan." text="The flow is designed to feel calm, predictable, and easy to follow on desktop and mobile." />
+          <SectionHeading eyebrow="Parent Journey" title="From first visit to first plan." text="A predictable path with friendly steps and less reading." />
           <div className="step-grid">
             {journey.map((step, index) => (
               <div className="step-card" key={step}><span>{index + 1}</span><strong>{step}</strong></div>
@@ -97,7 +112,7 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection className="section soft-band">
-        <SectionHeading eyebrow="Funding & Impact" title="Built for community impact and funding support." text="This demo includes a funding-ready structure for grant applications, social service proposals, community partnerships, donor engagement, and transparent impact storytelling." align="center" />
+        <SectionHeading eyebrow="Funding & Impact" title="Community impact, made visual." text="Grant, donor, and partnership content is organized into quick, scannable blocks." align="center" />
         <div className="metric-grid">
           {impactMetrics.slice(0, 4).map((metric) => <IconCard key={metric.label} icon={metric.icon} title={metric.value} text={metric.label} />)}
         </div>
@@ -105,7 +120,7 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection className="section">
-        <SectionHeading eyebrow="Helpful References" title="Official resource links for Canadian families." text="These buttons link to official government pages families can review. They do not imply endorsement or approval of this fictional demo site." align="center" />
+        <SectionHeading eyebrow="Helpful References" title="Official links, clearly separated." text="These external links do not imply endorsement or approval of this fictional demo site." align="center" />
         <div className="card-grid four resource-links">
           {governmentLinks.map((link) => (
             <a className="soft-card lift" href={link.href} target="_blank" rel="noreferrer" key={link.title}>
@@ -131,7 +146,7 @@ export default function Home() {
           <ImageTile src={images.art} alt="Child drawing with colorful art supplies" title="Creative routines" text="Cards and galleries stay spacious on mobile." />
         </div>
         <div>
-          <SectionHeading eyebrow="Services Preview" title="Clear service language for a professional support website." text="Services use referral-aware and professional-review language without diagnosis, cure, or guaranteed outcome claims." />
+          <SectionHeading eyebrow="Services Preview" title="Short, careful service language." text="Referral-aware wording without diagnosis, cure, or guaranteed outcome claims." />
           <div className="mini-list">
             {services.map((service) => <span key={service}>{service}</span>)}
           </div>

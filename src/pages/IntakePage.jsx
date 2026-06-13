@@ -1,22 +1,31 @@
 import { ClipboardCheck } from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
 import SectionHeading from "../components/SectionHeading";
-import { IconCard } from "../components/Card";
+import { IconCard, ImageRibbon } from "../components/Card";
 import { IntakeForm } from "../components/Forms";
 import ContactCTA from "../components/ContactCTA";
+import { images, pageVisuals } from "../data/siteData";
 
 export default function IntakePage() {
   const steps = ["Tell us about your child", "Share your goals", "Choose program interest", "Book a consultation", "Receive next-step guidance"];
   return (
     <>
-      <section className="page-hero">
-        <span className="eyebrow">Family Intake</span>
-        <h1>Start with a simple, supportive intake process.</h1>
-        <p>The demo intake page is designed to feel calm, mobile-friendly, and clear for families exploring child development support.</p>
+      <section className="page-hero visual-hero">
+        <div>
+          <span className="eyebrow">Family Intake</span>
+          <h1>A gentle first step.</h1>
+          <p>A calm demo intake flow with friendly steps, visual support, and mobile-friendly fields.</p>
+        </div>
+        <div className="page-hero-media">
+          <img src={images.family} alt="Caregiver and child preparing for support intake" />
+        </div>
       </section>
+      <AnimatedSection className="section">
+        <ImageRibbon items={pageVisuals.intake} />
+      </AnimatedSection>
       <AnimatedSection className="split-section">
         <div>
-          <SectionHeading eyebrow="Intake Steps" title="A predictable path from first contact to next guidance." />
+          <SectionHeading eyebrow="Intake Steps" title="A predictable path." />
           <div className="step-grid">{steps.map((step, index) => <div className="step-card" key={step}><span>{index + 1}</span><strong>{step}</strong></div>)}</div>
           <IconCard icon={ClipboardCheck} title="Privacy note" text="Do not submit real personal health information through demo forms. A production site should use a reviewed privacy workflow." />
         </div>

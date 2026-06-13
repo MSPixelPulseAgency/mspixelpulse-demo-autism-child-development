@@ -2,16 +2,25 @@ import AnimatedSection from "../components/AnimatedSection";
 import SectionHeading from "../components/SectionHeading";
 import FAQAccordion from "../components/FAQAccordion";
 import ContactCTA from "../components/ContactCTA";
-import { faqItems } from "../data/siteData";
+import { ImageRibbon } from "../components/Card";
+import { faqItems, images, pageVisuals } from "../data/siteData";
 
 export default function FAQPage() {
   return (
     <>
-      <section className="page-hero">
-        <span className="eyebrow">FAQ</span>
-        <h1>Questions families, funders, and future clients may ask.</h1>
-        <p>All answers are demo-safe and clarify that this is not a real clinic, medical service, or government-approved organization.</p>
+      <section className="page-hero visual-hero">
+        <div>
+          <span className="eyebrow">FAQ</span>
+          <h1>Clear answers, calmer browsing.</h1>
+          <p>Demo-safe answers for families, funders, and future website clients.</p>
+        </div>
+        <div className="page-hero-media">
+          <img src={images.room} alt="Calm child development room for FAQ page" />
+        </div>
       </section>
+      <AnimatedSection className="section">
+        <ImageRibbon items={pageVisuals.resources} />
+      </AnimatedSection>
       <AnimatedSection className="section narrow">
         <SectionHeading eyebrow="Frequently Asked Questions" title="Plain answers with careful disclaimers." align="center" />
         <FAQAccordion items={faqItems} />
