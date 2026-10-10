@@ -19,3 +19,11 @@ npm install
 npm run build
 npm run dev
 ```
+
+## Website and demo management
+
+- **Live Website:** [https://autism.mspixelpulse.com](https://autism.mspixelpulse.com)
+- **MSPixelPulse Projects:** [MSPixelPulse Projects](https://mspixelpulse.com/projects)
+- **Aurelion Demo Library:** [Private Demo Management — Owner Access Required](https://mahakpatel.com/play/ai?view=demo-library)
+
+Category subdomains are not published here until their HTTPS website is verified. The Aurelion link is an owner-only management interface and does not grant access.
